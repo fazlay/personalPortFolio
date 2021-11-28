@@ -2,15 +2,6 @@ body {
   background-color: rgba(254, 243, 199);
 }
 
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
 .img-container {
   background-image: url("https://i.ibb.co/fpkrs0n/screencapture-gifted-mcnulty-3d2007-netlify-app-2021-11-28-12-14-10-1.png");
   background-position: top;

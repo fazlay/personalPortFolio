@@ -5,7 +5,7 @@ import NodeLogo from "./NodeLogo";
 
 const HeroSection = () => {
   return (
-    <div className="  grid grid-cols-2 gap-4 items-center  h-96  ">
+    <div className="  grid grid-cols-2 gap-4 items-center  h-screen  ">
       <div className="">
         <div>
           <h1>Hello I'M</h1>

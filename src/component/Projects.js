@@ -4,8 +4,8 @@ import "../App.css";
 const Projects = () => {
   return (
     <div className="bg-yellow-100">
-      <div className="  grid grid-cols-2 gap-x-4 items-center  h-96 gap-y-40  ">
-        <div className=" w-full overflow-visible img-container "></div>
+      <div className="  grid grid-cols-2 gap-x-4 items-center gap-y-40  ">
+        <div className="  img-container "></div>
         <div>
           <div className="pl-12">
             <h1 className="text-2xl font-bold">TREK KING </h1>
@@ -73,7 +73,7 @@ const Projects = () => {
             </ul>
           </div>
         </div>
-        <div className=" w-full overflow-visible img-container "></div>
+        <div className=" img-container "></div>
       </div>
     </div>
   );

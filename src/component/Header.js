@@ -26,7 +26,7 @@ function Header() {
         </a>
       </div>
       <div>
-        <a href="#">
+        <a href="contact">
           <h1 className="font-bold text-center hover:bg-black hover:text-white">
             CONTACT ME
           </h1>
