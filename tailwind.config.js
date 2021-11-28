@@ -1,12 +1,16 @@
 // tailwind.config.js
 module.exports = {
-    purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
-    darkMode: false, // or 'media' or 'class'
-    theme: {
-      extend: {},
+  purge: ["./src/**/*.{js,jsx,ts,tsx}", "./public/index.html"],
+  darkMode: false, // or 'media' or 'class'
+  theme: {
+    fontFamily: {
+      body: ['"Open Sans"'],
+      topHeading: ['"Bebas Neue"'],
     },
-    variants: {
-      extend: {},
-    },
-    plugins: [],
-  }
+    extend: {},
+  },
+  variants: {
+    extend: {},
+  },
+  plugins: [],
+};

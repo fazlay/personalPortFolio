@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="md:container md:mx-auto px-32 bg-yellow-100">
       <Header />
-      <HeroSection></HeroSection>
+      {/* <HeroSection></HeroSection> */}
       <Projects></Projects>
       <ContactSection></ContactSection>
     </div>
