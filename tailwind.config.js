@@ -4,7 +4,7 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     fontFamily: {
-      body: ['"Open Sans"'],
+      body: ['"Montserrat"'],
       topHeading: ['"Bebas Neue"'],
     },
     extend: {},

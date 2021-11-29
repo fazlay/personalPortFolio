@@ -3,13 +3,23 @@ body {
 }
 
 .img-container {
-  background-image: url("https://i.ibb.co/fpkrs0n/screencapture-gifted-mcnulty-3d2007-netlify-app-2021-11-28-12-14-10-1.png");
+  /* background-image: url("https://i.ibb.co/fpkrs0n/screencapture-gifted-mcnulty-3d2007-netlify-app-2021-11-28-12-14-10-1.png"); */
   background-position: top;
-  transition: ease-in-out 8s;
+  transition: ease-out 5s;
   background-size: cover;
   height: 300px;
 }
 
 .img-container:hover {
   background-position: bottom;
+}
+
+.img1 {
+  background-image: url("https://i.ibb.co/JnYdxt6/screencapture-tender-euler-ae450c-netlify-app-2021-11-29-15-11-03-1.png");
+}
+.img2 {
+  background-image: url("https://i.ibb.co/fpkrs0n/screencapture-gifted-mcnulty-3d2007-netlify-app-2021-11-28-12-14-10-1.png");
+}
+.img3 {
+  background-image: url("https://i.ibb.co/0rygsw1/screencapture-infallible-tereshkova-1d3c20-netlify-app-2021-11-29-15-11-17-1.png");
 }

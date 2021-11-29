@@ -5,11 +5,16 @@ import NodeLogo from "./NodeLogo";
 
 const HeroSection = () => {
   return (
-    <div className="  grid grid-cols-2 gap-4 items-center  h-screen  ">
+    <div className=" grid grid-cols-2 gap-4 items-center  h-screen ">
       <div className="">
         <div>
-          <h1>Hello I'M</h1>
-          <h1 className="text-left text-9xl font-extrabold font-topHeading">
+          <img
+            className="pb-4 w-1/3"
+            src="https://images.squarespace-cdn.com/content/v1/5952601bff7c50d8ca27a6bf/1516551884111-19L1N3UUC0C2Y6RHOBWC/heythere.png"
+            alt=""
+          />
+          <h1 className="text-2xl font-light">I'm</h1>
+          <h1 className="text-left text-8xl font-extrabold font-topHeading">
             Fazlay Rabbi
           </h1>
           <h1 className="text-left pt-2 pb-6  m-1 text-3xl font-light">
