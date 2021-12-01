@@ -1,5 +1,6 @@
 body {
-  background-color: rgba(254, 243, 199);
+  /* background-color: rgb(255, 251, 235); */
+  background-color: rgb(254, 249, 231);
 }
 
 .img-container {
@@ -22,4 +23,9 @@ body {
 }
 .img3 {
   background-image: url("https://i.ibb.co/0rygsw1/screencapture-infallible-tereshkova-1d3c20-netlify-app-2021-11-29-15-11-17-1.png");
+}
+
+.myImage {
+  height: 75%;
+  width: 75%;
 }

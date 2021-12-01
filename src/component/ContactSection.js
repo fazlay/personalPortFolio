@@ -1,6 +1,29 @@
-import React from "react";
+import React, { useRef } from "react";
+import emailjs from "emailjs-com";
 
 const ContactSection = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_72716sm",
+        "template_9q258ou",
+        form.current,
+        "user_bYgWfFHFkKyvzGnEDagVD"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          e.target.reset();
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
   return (
     <>
       <div class="mt-32 overflow-hidden">
@@ -86,14 +109,18 @@ const ContactSection = () => {
             </div>
           </div>
 
-          <form class="p-6 flex flex-col justify-center">
+          <form
+            ref={form}
+            onSubmit={sendEmail}
+            class="p-6 flex flex-col justify-center"
+          >
             <div class="flex flex-col">
               <label for="name" class="hidden">
                 Full Name
               </label>
               <input
                 type="name"
-                name="name"
+                name="user_name"
                 id="name"
                 placeholder="Full Name"
                 class="w-100 mt-2 py-3 px-3 rounded-lg bg-white  border border-gray-400 dark:border-gray-700 text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none"
@@ -106,7 +133,7 @@ const ContactSection = () => {
               </label>
               <input
                 type="email"
-                name="email"
+                name="user_email"
                 id="email"
                 placeholder="Email"
                 class="w-100 mt-2 py-3 px-3 rounded-lg bg-white  border border-gray-400 dark:border-gray-700 text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none"
@@ -118,9 +145,9 @@ const ContactSection = () => {
                 Number
               </label>
               <textarea
-                type="tel"
-                name="tel"
-                id="tel"
+                type="message"
+                name="message"
+                id="message"
                 placeholder="Type Your Message"
                 class="w-100 mt-2 py-3 px-3 rounded-lg bg-white  border border-gray-400 dark:border-gray-700 text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none"
               />
@@ -128,6 +155,7 @@ const ContactSection = () => {
 
             <button
               type="submit"
+              value="Send"
               class="md:w-32 bg-indigo-600 hover:bg-blue-dark text-white font-bold py-3 px-6 rounded-lg mt-3 hover:bg-indigo-500 transition ease-in-out duration-300"
             >
               Submit

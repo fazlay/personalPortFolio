@@ -1,11 +1,13 @@
 import React from "react";
+import hero from "./../images/heroPicture.png";
 import ReactLogo from "./ReactLogo";
 import MongoLogo from "./MongoLogo";
 import NodeLogo from "./NodeLogo";
+import "./../App.css";
 
 const HeroSection = () => {
   return (
-    <div className=" grid grid-cols-2 gap-4 items-center  h-screen ">
+    <div className=" grid grid-cols-1  md:grid-cols-2 gap-4 items-center  h-screen ">
       <div className="">
         <div>
           <img
@@ -24,35 +26,21 @@ const HeroSection = () => {
           <a
             className="bg-yellow-700 hover:bg-yellow-900 m-1  py-2 px-4 rounded-md text-white"
             target="_blank"
-            href="https://doc-0o-3g-apps-viewer.googleusercontent.com/viewer/secure/pdf/325402bb09nqnr9tq2iptdn4b9m6ve96/l6k13jd6mtmsaq0pdnu4rk5inva1jngv/1638113325000/drive/15091324660412797575/ACFrOgDPWGqClFOyGxA-NO0p-Q5eA7xrdTG6sxES4uNvzZcDQ1HKaNJXEdHOBYuvwhbExlx1JOAAWO0ZxPjl53wEdyUj8djj2Zb8SZPDH8vCGrLBsPMxs1zTgywrXikFNxbmTazCmjmZ9y2464YB?print=true&nonce=j5mo32bdkdljm&user=15091324660412797575&hash=rsrqdrp3anc43rqre3c3a9r5ffekkd16"
+            href="https://doc-00-9k-prod-00-apps-viewer.googleusercontent.com/viewer2/prod-00/pdf/qj303hqev9ug20cfs0k2suf0cocemhgh/mfnqr9n1gc0qg7b5eo90jmpt11lf107v/1638213375000/3/*/APznzaa2tcCmIj_o1vHimy5jCKui1oRBN_4V8NmZY3VW4KUS80UurLznpKn6DGXQy0mUY7TNbioHzEwOBTwoNvFPVa80B56ziyUzwkCAFNcauPrftm1jtV9nMYzqboycF7iRCNcECRRYvU6YUOcX0RQt80XoZXzwhfXaMqdwpq_iZdK9azftBNgLsMMvF5chw0lAIA9nEChFlSQgnwdeKm5cArhFPgsRrfSQKgOHPlAAPODcyGabMCNZaiRd9rk-rEOk-fT4XbSSQ9B8GVtSLmoPLRFrczBqzZ-tXaZKLVaQ_d0j22FxZ-U_vdS3UWO5tk8gSgFAEwx55BQS5Q4QJUp6p-hmggz0ivO3ggL3RFkEm3IoQ4b-j4lkN3paZ4iak6EaDPKxX8tN"
           >
             DOWNLOAD MY CV
           </a>
         </div>
       </div>
-      <div className="flex flex-wrap">
-        <ReactLogo></ReactLogo>
+      <div className="md:flex flex-wrap hidden">
+        <img
+          src="https://i.ibb.co/1rVWgPk/Photo-Funia-1638380218.png"
+          alt="my image"
+          className="myImage"
+        />
+        {/* <ReactLogo></ReactLogo>
         <MongoLogo></MongoLogo>
-        <div> {"  "}</div>
-        <NodeLogo></NodeLogo>
-        <ReactLogo></ReactLogo>
-        <MongoLogo></MongoLogo>
-        <div></div>
-        <NodeLogo></NodeLogo>
-        <ReactLogo></ReactLogo>
-        <MongoLogo></MongoLogo>
-        <NodeLogo></NodeLogo>
-        <div></div>
-        <ReactLogo></ReactLogo>
-        <MongoLogo></MongoLogo>
-        <NodeLogo></NodeLogo>
-        <ReactLogo></ReactLogo>
-        <MongoLogo></MongoLogo>
-        <NodeLogo></NodeLogo>
-        <div></div>
-        <ReactLogo></ReactLogo>
-        <MongoLogo></MongoLogo>
-        <NodeLogo></NodeLogo>
+        <NodeLogo></NodeLogo> */}
       </div>
     </div>
   );

@@ -3,12 +3,12 @@ import "../App.css";
 
 const Projects = () => {
   return (
-    <div className="bg-yellow-100">
-      <div className="  grid grid-cols-2 gap-x-4 items-center gap-y-40  ">
+    <div>
+      <div className="  grid  grid-cols-1 md:grid-cols-2 gap-x-4 items-center gap-y-12 md:gap-y-40  ">
         {/* First Project --------------------------------------------------------------------- */}
         <div>
-          <div className="  img-container img1 "></div>
-          <div className="flex">
+          <div className=" img-container img1 "></div>
+          <div className="flex justify-center">
             <a
               href="https://compassionate-swanson-925132.netlify.app/"
               target="_blank"
@@ -103,7 +103,7 @@ const Projects = () => {
         </div>
         <div>
           <div className="  img-container img2 "></div>
-          <div className="flex">
+          <div className="flex justify-center">
             <a
               href="https://compassionate-swanson-925132.netlify.app/"
               target="_blank"
@@ -130,7 +130,7 @@ const Projects = () => {
         {/* Third Project --------------------------------------------------------------------- */}
         <div>
           <div className="  img-container img3"></div>
-          <div className="flex">
+          <div className="flex justify-center">
             <a
               href="https://compassionate-swanson-925132.netlify.app/"
               target="_blank"

@@ -2,10 +2,12 @@ import React from "react";
 
 function Header() {
   return (
-    <div className="grid grid-cols-7 gap-4 py-2 ">
+    <div className="grid grid-cols-1  md:grid-cols-7 gap-4 py-2 ">
       <div>
         <a href="#">
-          <h1 className="font-bold text-2xl font-topHeading">Fazlay Rabbi</h1>
+          <h1 className="font-bold text-center text-2xl font-topHeading">
+            Fazlay Rabbi
+          </h1>
         </a>
       </div>
       <div></div>
