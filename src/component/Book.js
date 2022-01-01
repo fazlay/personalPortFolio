@@ -2,6 +2,7 @@ import React from "react";
 import "./Book.css";
 
 const book = () => {
+  //This is a crazy comment 
   return (
     <>
       <div class="imgLoader"></div>
